@@ -1,0 +1,47 @@
+
+The vise package language is used for writing package methods.
+It's a simple stack based language.
+Each command takes an "argument", and possibly more from the stack.
+The simplest command is #, which pushes its argument onto the stack.
+
+List of all 34 commands:
+
+. -- comment
+# arg -- push the argument onto the stack
+set arg -- stores the top of stack into the var arg
+get arg -- pushes the value of the var arg onto the stack
+echo -- prints out the top of stack
+dup -- duplicate the top of stack
+drop -- pop the top of stack
+
+  All the following commands pop a path off the top of the stack, and do the obvious:
+mkdir
+mkdir-marked -- puts a vise.mark file in the directory, so you can delete it.
+file-delete
+dir-delete
+cd
+
+  Commands I'll document later:
+getbest
+join
+depends
+untar
+run-script
+exe
+rel-exe
+unexe
+rel-unexe
+file-exists
+mark
+delete-tree
+==
+if
+fi
+not
+crash
+check
+mild-check
+warn
+done
+hashsum
+
