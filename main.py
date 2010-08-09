@@ -1,6 +1,6 @@
 #! /usr/bin/python
 
-version = "0012"
+version = "0013"
 
 credits = """
 === Vise Package Manager version %s ===
@@ -36,7 +36,11 @@ teal   = "\x1B\x5B\x30\x31\x3B\x33\x36\x6D"
 default_config = """
   # Default initial configuration file for Vise
 
-server toothbrush.dyndns.org 80 /vise
+# Long dead archaic IP
+#server toothbrush.dyndns.org 80 /vise
+
+# New IP
+server 18.85.8.193 80 /vise
 
   # Uncomment this line to access Noah's server
 #server robodude.no-ip.org 8080 /vise
