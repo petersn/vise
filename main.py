@@ -1536,8 +1536,8 @@ def writeconfig():
     openfile = open( eu("~/.visecfg"), "w" )
 
     openfile.write( """
-  # Configuration file for vise, written on %s
-""" % (timestring()) )
+  # Configuration file for vise version %s, written on %s
+""" % (version, timestring()) )
 
     openfile.write("\n")
 
