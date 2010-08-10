@@ -13,6 +13,7 @@ Installation
 
 Download main.py (which is itself Vise) and use it to install the most recent version of itself by running:
 
+	gpg --import visekey.gpg
 	python main.py reset
 	python main.py refresh
 	python main.py install vise
